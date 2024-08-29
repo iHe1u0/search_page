@@ -1,11 +1,15 @@
 function search() {
-    const input = document.getElementById('searchInput').value;
-    const results = document.getElementById('results');
-
-    // 假设执行简单的搜索逻辑，只显示输入内容
+    const input = document.getElementById('searchInput').value.trim();
     if (input) {
-        results.innerHTML = `你搜索了: ${input}`;
+        const searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(input)}`;
+        window.open(searchUrl, '_blank');
     } else {
-        results.innerHTML = '请输入内容进行搜索。';
+        document.getElementById('results').innerHTML = '请输入内容进行搜索。';
+    }
+}
+
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        search();
     }
 }

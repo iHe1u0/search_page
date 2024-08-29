@@ -1,17 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('https://bing.img.run/1920x1080.php');
+    /* 替换为你的图片URL */
+    background-size: cover;
+    /* 图片覆盖整个背景 */
+    background-position: center;
+    /* 图片居中显示 */
+    background-repeat: no-repeat;
+    /* 不重复显示图片 */
 }
 
 .search-container {
     text-align: center;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 使用半透明背景色以突出搜索框 */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

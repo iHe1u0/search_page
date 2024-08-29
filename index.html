@@ -12,7 +12,7 @@
     <div class="search-container">
         <h1>搜索页面</h1>
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="请输入搜索内容...">
+            <input type="text" id="searchInput" placeholder="请输入搜索内容..." onkeypress="handleKeyPress(event)">
             <button onclick="search()">搜索</button>
         </div>
         <div id="results"></div>
